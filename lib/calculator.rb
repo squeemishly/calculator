@@ -8,7 +8,7 @@ class Calculator
     @total   = 0
   end
   
-  def add_to_total
+  def add
     numbers.each do |number|
       @total = @total + number
     end
@@ -22,7 +22,7 @@ class Calculator
     @numbers = []
   end
   
-  def subtraction
+  def subtract
     numbers.each_with_index do |number, index|
       if index == 0
         @total = number
@@ -32,8 +32,3 @@ class Calculator
     end
   end
 end
-
-# calc = Calculator.new
-# calc.new_value(2)
-# calc.new_value(3)
-# calc.add_to_total

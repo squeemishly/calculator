@@ -37,7 +37,7 @@ class CalculatorTest < Minitest::Test
     calc.new_value(2)
     calc.new_value(3)
     calc.new_value(4)
-    calc.add_to_total
+    calc.add
     assert_equal 9, calc.total
   end
 
@@ -53,7 +53,7 @@ class CalculatorTest < Minitest::Test
     calc.new_value(9)
     calc.new_value(7)
     calc.new_value(1)
-    calc.subtraction
+    calc.subtract
     assert_equal 1, calc.total
   end
 end
